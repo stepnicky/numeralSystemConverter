@@ -1,0 +1,17 @@
+.container {
+  margin: 250px auto;
+  text-align: center;
+}
+
+.result {
+  height: 20px;
+  width: 100px;
+  margin: 0 auto;
+  color: magenta;
+}
+
+div {
+  margin: 10px;
+  text-align: center;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYXNzL3N0eWxlLnNjc3MiLCJzdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBa0I7RUFDbEIsa0JBQWtCO0FDQ3RCOztBREVFO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixjQUFjO0VBQ2QsY0FBYztBQ0NsQjs7QURDRTtFQUNFLFlBQVk7RUFDWixrQkFBa0I7QUNFdEIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
