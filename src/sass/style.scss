@@ -16,9 +16,10 @@ header {
   flex-direction: column;
   justify-content: space-around;
   background-color: #A1B5D8;
-  padding-top: 5%;
+  padding: 5% 20px 0 20px;
   .title {
     flex: 2;
+    text-align: center;
     margin: auto;
     display: flex;
     h1 {
@@ -40,7 +41,7 @@ header {
       text-align: center;
       font-size: 16px;
       color: #738290;
-      margin: 0 200px;
+      // margin: 0 200px;
     }
   }
 }
@@ -56,8 +57,7 @@ main {
 .container {
     display: flex;
     margin: auto;
-    // padding: 100px 50px;
-    // max-width: 1140px;
+    padding: 0 50px;
     text-align: center;
   }
   
@@ -68,7 +68,6 @@ form {
   .selectForm{
     display: flex;
     margin-bottom: 40px;
-    flex-wrap: nowrap;
     label {
       padding: 4px 0;
       text-align: left;
@@ -117,7 +116,6 @@ form {
       transition: all 1s;
     }
     .numberInput::placeholder{
-      // font-size: 16px;
       color: darken(#FFF, 20%);
     }
     .numberInput:hover {
@@ -159,8 +157,7 @@ form {
     margin: 0 auto;
     margin-bottom: 2px;
     font-size: 25px;
-
-    // background-color: #A1B5D8;
+    white-space: pre-line;
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
     .result {
       margin: auto;
@@ -180,5 +177,60 @@ footer {
   }
 }
 
+@media only screen and (max-width: 810px){
+  header {
+    .title {
+      h1 {
+        font-size: 250%;
+      }
+    }
+    .intro {
+      p {
+        font-size: 16px;
+      }
+      .introText {
+        font-size: 12px;
+      }
+    }
+  }
+  .container {
+    flex-direction: column;
+  }
+  .resultBox {
+    margin-left: 0;
+  }
+}
 
-  
+@media only screen and (max-width: 485px){
+  main {
+    .container {
+      form {
+        .selectForm {
+          flex-direction: column;
+          margin-bottom: 0;
+          label {
+            margin-left: 50px;
+          }
+          select {
+            margin: 0 50px 0 50px;
+          }
+        }
+        .toForm {
+          margin-bottom: 30px;
+        }
+        .inputBox {
+          flex-direction: column;
+          .numberInput {
+            order: 0;
+            margin: 0 auto;
+            padding: 15px 0;
+          }
+          button {
+            padding: 5px 0;
+            margin: 30px 50px 0 50px;
+          }
+        }
+      }
+    }
+  }
+}
