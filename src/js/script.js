@@ -16,6 +16,7 @@ const el = {
   };
   
   const placeholderMaker = (system) => {
+    el.input.type = (system === 'hexadecimal') ? 'text' : 'number';
     const placeholder = (system != 'choose system') ?
     `convert from ${system} system` : 'choose numeral system';
     return placeholder;
