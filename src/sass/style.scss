@@ -1,15 +1,184 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #A1B5D8;
+  padding-top: 5%;
+  .title {
+    flex: 2;
+    margin: auto;
+    display: flex;
+    h1 {
+      margin: auto;
+      color: #FFFCF7;
+      font-family: 'Raleway', sans-serif;
+      font-size: 300%;
+    }
+  }
+  .intro {
+    flex: 1;
+    margin: 0 auto 20px auto;
+    color: #E4F0D0;
+    p {
+      font-size: 21px;
+      text-align: center;
+    }
+    .introText {
+      text-align: center;
+      font-size: 16px;
+      color: #738290;
+      margin: 0 200px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  background-color: #C2D8B9;
+  color: #FFFCF7;
+  min-height: 460px;
+  margin-bottom: 0;
+}
+
 .container {
-    margin: 250px auto;
+    display: flex;
+    margin: auto;
+    // padding: 100px 50px;
+    // max-width: 1140px;
     text-align: center;
   }
   
-  .result {
-    height: 20px;
-    width: 100px;
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  .selectForm{
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+    label {
+      padding: 4px 0;
+      text-align: left;
+      flex: 2;
+    }
+    select {
+      margin-left: 10px;
+      padding: 3px 0;
+      font-size: 21px;;
+      text-align: center;
+      height: 30px;
+      flex: 1;
+      box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      border: none;
+      background-color: #738290;
+      color: #FFFCF7;
+      transition: all 1s;
+    }
+    select:hover {
+      cursor: pointer;
+      background-color: lighten($color: #738290, $amount: 10%);
+    }
+  }
+  .fromForm {
+    flex: 1;
+  }
+  .toForm {
+    flex: 1;
+  }
+  .inputBox {
+    flex: 1;
+    display: flex;
+    .numberInput {
+      flex: 2;
+      order: 2;
+      text-align: center;
+      margin-left: 40px;
+      height: 40px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+      background-color: #738290;
+      color: #FFFCF7;
+      transition: all 1s;
+    }
+    .numberInput::placeholder{
+      // font-size: 16px;
+      color: darken(#FFF, 20%);
+    }
+    .numberInput:hover {
+      background-color: lighten($color: #738290, $amount: 10%);
+    }
+    button {
+      font-size: 21px;
+      flex: 1;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+      background-color: #A1B5D8;
+      color: #FFFCF7;
+      transition: all 1s;
+    }
+    button:hover {
+      background-color: #FFFCF7;
+      color: #A1B5D8;
+    }
+  }
+}
+
+
+.resultBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 2;
+  margin-left: 40px;
+  .resultTitle {
+    margin: 40px 0 8px 0;
+  }
+  .resultField {
+    display: flex;
+    flex: 1;
+    height: 50%;
+    width: 100%;
     margin: 0 auto;
-    color: magenta;
+    margin-bottom: 2px;
+    font-size: 25px;
+
+    // background-color: #A1B5D8;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+    .result {
+      margin: auto;
+      color: #738290;
+    }
   }
-  div {
-    margin: 10px;
-    text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #FFFCF7;
+  p {
+    margin: auto;
+    padding: 5px 0 5px 0;
+    color: #738290;
   }
+}
+
+
+  

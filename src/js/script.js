@@ -23,7 +23,7 @@ const el = {
   
   const titleMaker = (system) => {
     const title = (system != 'choose system') ? 
-    `result in ${system} system` :'choose numeral system';
+    `result in ${system} system: ` :'choose numeral system';
     return title;
   };
   

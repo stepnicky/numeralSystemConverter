@@ -5,35 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>numeral systems converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class='container'>
-        <form>
-          <label>convert from:</label>
-          <select id='from'>
-            <option value="choose">choose system</option>
-            <option value='hex'>hexadecimal</option>
-            <option value='dec'>decimal</option>
-            <option value='octal'>octal</option>
-            <option value='qua'>quaternary</option>
-            <option value='bi'>binary</option>
-          </select>
-          <label>to:</label>
-          <select id='to'>
-            <option value="choose">choose system</option>
-            <option value='hex'>hexadecimal</option>
-            <option value='dec'>decimal</option>
-            <option value='octal'>octal</option>
-            <option value='qua'>quaternary</option>
-            <option value='bi'>binary</option>
-          </select>
-          <input class="numberInput" type='text' placeholder="choose numeral system">
-          <button type="submit">convert</button>    
-        </form>
-        <div class='resultTitle'>choose numeral system</div>
-        <div class='result'></div>
-      </div>
+    <header>
+        <div class="title">
+            <h1>numeral system converter</h1>
+        </div> 
+        <div class="intro">
+            <p>convert numbers between selected systems</p>
+            <div class="introText">
+                select numeral systems in the form below and enter your number<br> 
+                make sure you use lower case when typing numbers in hexadecimal system<br> 
+                convert only positive values
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class='container'>
+            <form>
+                <div class="fromForm selectForm">
+                    <label>convert from:</label>
+                    <select id='from'>
+                        <option value="choose">choose system</option>
+                        <option value='hex'>hexadecimal</option>
+                        <option value='dec'>decimal</option>
+                        <option value='octal'>octal</option>
+                        <option value='qua'>quaternary</option>
+                        <option value='bi'>binary</option>
+                    </select>
+                </div>
+                <div class="toForm selectForm">
+                    <label>to:</label>
+                    <select id='to'>
+                        <option value="choose">choose system</option>
+                        <option value='hex'>hexadecimal</option>
+                        <option value='dec'>decimal</option>
+                        <option value='octal'>octal</option>
+                        <option value='qua'>quaternary</option>
+                        <option value='bi'>binary</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <input class="numberInput" type='text' placeholder="choose numeral system">
+                    <button type="submit">convert</button>
+                </div>
+            </form>
+            <div class="resultBox">
+                <div><p class='resultTitle'>choose numeral system</p></div>
+                <div class="resultField"><p class="result"></p></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <p>Copyright &reg numeralSystemConverter 2023</p> 
+    </footer>
       <script src="js/script.js" type="module"></script>
 </body>
 </html>

@@ -1,17 +1,201 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #A1B5D8;
+  padding-top: 5%;
+}
+
+header .title {
+  flex: 2;
+  margin: auto;
+  display: flex;
+}
+
+header .title h1 {
+  margin: auto;
+  color: #FFFCF7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 300%;
+}
+
+header .intro {
+  flex: 1;
+  margin: 0 auto 20px auto;
+  color: #E4F0D0;
+}
+
+header .intro p {
+  font-size: 21px;
+  text-align: center;
+}
+
+header .intro .introText {
+  text-align: center;
+  font-size: 16px;
+  color: #738290;
+  margin: 0 200px;
+}
+
+main {
+  display: flex;
+  background-color: #C2D8B9;
+  color: #FFFCF7;
+  min-height: 460px;
+  margin-bottom: 0;
+}
+
 .container {
-  margin: 250px auto;
+  display: flex;
+  margin: auto;
   text-align: center;
 }
 
-.result {
-  height: 20px;
-  width: 100px;
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+form .selectForm {
+  display: flex;
+  margin-bottom: 40px;
+  flex-wrap: nowrap;
+}
+
+form .selectForm label {
+  padding: 4px 0;
+  text-align: left;
+  flex: 2;
+}
+
+form .selectForm select {
+  margin-left: 10px;
+  padding: 3px 0;
+  font-size: 21px;
+  text-align: center;
+  height: 30px;
+  flex: 1;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: none;
+  background-color: #738290;
+  color: #FFFCF7;
+  transition: all 1s;
+}
+
+form .selectForm select:hover {
+  cursor: pointer;
+  background-color: #8f9ba7;
+}
+
+form .fromForm {
+  flex: 1;
+}
+
+form .toForm {
+  flex: 1;
+}
+
+form .inputBox {
+  flex: 1;
+  display: flex;
+}
+
+form .inputBox .numberInput {
+  flex: 2;
+  order: 2;
+  text-align: center;
+  margin-left: 40px;
+  height: 40px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #738290;
+  color: #FFFCF7;
+  transition: all 1s;
+}
+
+form .inputBox .numberInput::-moz-placeholder {
+  color: #cccccc;
+}
+
+form .inputBox .numberInput::placeholder {
+  color: #cccccc;
+}
+
+form .inputBox .numberInput:hover {
+  background-color: #8f9ba7;
+}
+
+form .inputBox button {
+  font-size: 21px;
+  flex: 1;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #A1B5D8;
+  color: #FFFCF7;
+  transition: all 1s;
+}
+
+form .inputBox button:hover {
+  background-color: #FFFCF7;
+  color: #A1B5D8;
+}
+
+.resultBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 2;
+  margin-left: 40px;
+}
+
+.resultBox .resultTitle {
+  margin: 40px 0 8px 0;
+}
+
+.resultBox .resultField {
+  display: flex;
+  flex: 1;
+  height: 50%;
+  width: 100%;
   margin: 0 auto;
-  color: magenta;
+  margin-bottom: 2px;
+  font-size: 25px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-div {
-  margin: 10px;
-  text-align: center;
+.resultBox .resultField .result {
+  margin: auto;
+  color: #738290;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYXNzL3N0eWxlLnNjc3MiLCJzdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBa0I7RUFDbEIsa0JBQWtCO0FDQ3RCOztBREVFO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixjQUFjO0VBQ2QsY0FBYztBQ0NsQjs7QURDRTtFQUNFLFlBQVk7RUFDWixrQkFBa0I7QUNFdEIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #FFFCF7;
+}
+
+footer p {
+  margin: auto;
+  padding: 5px 0 5px 0;
+  color: #738290;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYXNzL3N0eWxlLnNjc3MiLCJzdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxzQkFBc0I7QUNDeEI7O0FERUE7RUFDRSxTQUFTO0VBQ1QsVUFBVTtFQUNWLGVBQWU7RUFDZiwyQ0FBMkM7RUFDM0MsWUFBWTtBQ0NkOztBREVBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixzQkFBc0I7RUFDdEIsNkJBQTZCO0VBQzdCLHlCQUF5QjtFQUN6QixlQUFlO0FDQ2pCOztBRFBBO0VBUUksT0FBTztFQUNQLFlBQVk7RUFDWixhQUFhO0FDR2pCOztBRGJBO0VBWU0sWUFBWTtFQUNaLGNBQWM7RUFDZCxrQ0FBa0M7RUFDbEMsZUFBZTtBQ0tyQjs7QURwQkE7RUFtQkksT0FBTztFQUNQLHdCQUF3QjtFQUN4QixjQUFjO0FDS2xCOztBRDFCQTtFQXVCTSxlQUFlO0VBQ2Ysa0JBQWtCO0FDT3hCOztBRC9CQTtFQTJCTSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLGNBQWM7RUFDZCxlQUFlO0FDUXJCOztBREhBO0VBQ0UsYUFBYTtFQUNiLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGdCQUFnQjtBQ01sQjs7QURIQTtFQUNJLGFBQWE7RUFDYixZQUFZO0VBR1osa0JBQWtCO0FDSXRCOztBRERBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixPQUFPO0FDSVQ7O0FEUEE7RUFLSSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGlCQUFpQjtBQ01yQjs7QURiQTtFQVNNLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsT0FBTztBQ1FiOztBRG5CQTtFQWNNLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osT0FBTztFQUNQLDRDQUE0QztFQUM1QyxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2Qsa0JBQWtCO0FDU3hCOztBRGxDQTtFQTRCTSxlQUFlO0VBQ2YseUJBQXdEO0FDVTlEOztBRHZDQTtFQWlDSSxPQUFPO0FDVVg7O0FEM0NBO0VBb0NJLE9BQU87QUNXWDs7QUQvQ0E7RUF1Q0ksT0FBTztFQUNQLGFBQWE7QUNZakI7O0FEcERBO0VBMENNLE9BQU87RUFDUCxRQUFRO0VBQ1Isa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osWUFBWTtFQUNaLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsNENBQTRDO0VBQzVDLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2Qsa0JBQWtCO0FDY3hCOztBRG5FQTtFQXlETSxjQUF3QjtBQ2M5Qjs7QUR2RUE7RUF5RE0sY0FBd0I7QUNjOUI7O0FEdkVBO0VBNERNLHlCQUF3RDtBQ2U5RDs7QUQzRUE7RUErRE0sZUFBZTtFQUNmLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQiw0Q0FBNEM7RUFDNUMseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxrQkFBa0I7QUNnQnhCOztBRHZGQTtFQTBFTSx5QkFBeUI7RUFDekIsY0FBYztBQ2lCcEI7O0FEWEE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLDhCQUE4QjtFQUM5QixPQUFPO0VBQ1AsaUJBQWlCO0FDY25COztBRG5CQTtFQU9JLG9CQUFvQjtBQ2dCeEI7O0FEdkJBO0VBVUksYUFBYTtFQUNiLE9BQU87RUFDUCxXQUFXO0VBQ1gsV0FBVztFQUNYLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsZUFBZTtFQUdmLDRDQUE0QztBQ2VoRDs7QURsQ0E7RUFxQk0sWUFBWTtFQUNaLGNBQWM7QUNpQnBCOztBRFpBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix5QkFBeUI7QUNlM0I7O0FEbEJBO0VBS0ksWUFBWTtFQUNaLG9CQUFvQjtFQUNwQixjQUFjO0FDaUJsQiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
