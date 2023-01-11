@@ -7,16 +7,17 @@ body {
   padding: 0;
   font-size: 21px;
   font-family: 'Roboto Condensed', sans-serif;
-  height: 100%;
+  min-height: 100vh;
 }
 
 header {
   display: flex;
   min-height: 300px;
+  height: 40vh;
   flex-direction: column;
   justify-content: space-around;
   background-color: #A1B5D8;
-  padding: 5% 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   .title {
     flex: 2;
     text-align: center;
@@ -51,6 +52,7 @@ main {
   background-color: #C2D8B9;
   color: #FFFCF7;
   min-height: 460px;
+  height: 55vh;
   margin-bottom: 0;
 }
 
@@ -170,6 +172,7 @@ footer {
   display: flex;
   align-items: center;
   background-color: #FFFCF7;
+  height: 5vh;
   p {
     margin: auto;
     padding: 5px 0 5px 0;
